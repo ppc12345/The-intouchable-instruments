@@ -1,5 +1,5 @@
 #include "detect.h"
-
+Detect::Detect() {}
 int Detect::getTime() {
     return clock() / CLOCKS_PER_SEC;
 }
