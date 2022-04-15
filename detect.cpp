@@ -1,15 +1,13 @@
 #include "detect.h"
+
 Detect::Detect() {}
-int Detect::getTime() {
-    return clock() / CLOCKS_PER_SEC;
-}
 
 void Detect::setup() {
     video.open(0);
     if (!video.isOpened()) {
         cerr << "fail to open camera" << endl;
     }
-    while (true) {
+    while (1) {
         video >> img;
         cvtColor(img, rgb, COLOR_BGR2RGB);
         for (int n = 0; n < 7; n++) {
@@ -30,18 +28,20 @@ void Detect::setup() {
             aveg[n] = aveg[n] / (100 * 80);
             aveb[n] = aveb[n] / (100 * 80);
         }
-        now = getTime();
-        if ((now - lasttime) > 0.5)
+        now = clock();
+        MyClass myclass;
+        if (((double)(now - last) / CLOCKS_PER_SEC) > 0.5)
         {
-            /**for (int z = 0; z < 7; z++) {
+            for (int z = 0; z < 7; z++) {
                 if (aver[z] < 50) {
                     output[z] = 1;
                 }
-                cout << output[z] << " ";
+               // cout << output[z] << " ";
             }
-            cout << endl; **/
-            cout << aver[0] << "," << aveg[0] << "," << aveb[0] << endl;
-            lasttime = now;
+            myclass.printnum(output);
+            // cout << endl; 
+            //cout << aver[0] << "," << aveg[0] << "," << aveb[0] << endl;
+            last = now;
         }
         cvtColor(rgb, img, COLOR_RGB2BGR);
         rectangle(img, Rect(10, 300, 80, 100), Scalar(0, 255, 0), 2, 8);
@@ -53,7 +53,6 @@ void Detect::setup() {
         rectangle(img, Rect(550, 300, 80, 100), Scalar(0, 255, 0), 2, 8);
         imshow("image", img);
         memset(output, 0, 7 * sizeof(output[0]));
-        if (waitKey(10) == 27)
-            break;
+        waitKey(10);
     }
 }

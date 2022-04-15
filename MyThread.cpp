@@ -1,7 +1,9 @@
 #include "MyThread.h"
-
+MyThread::MyThread() {}
 
 void MyThread::run() {
-	detect->setup();
+	Detect detect;
+	detect.setup();
 }
+
 

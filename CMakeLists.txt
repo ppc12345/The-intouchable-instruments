@@ -5,7 +5,9 @@ project (demo)
 set(SRC
     MyThread.cpp
     detect.cpp
-    main.cpp)
+    main.cpp
+    outout.cpp
+)
 add_executable(demo ${SRC})
 find_package (Threads)
 find_package (OpenCV REQUIRED)

@@ -8,13 +8,11 @@
 class MyThread : public CppThread {
 
 public:
-	MyThread() {
-		detect = new Detect();
-	};
+	MyThread();
 
 private:
 	void run();
-	Detect *detect;
+
 };
 
 
