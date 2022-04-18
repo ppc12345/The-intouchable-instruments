@@ -50,7 +50,10 @@ MainWindow::MainWindow(QWidget *parent)
                      "border-color: #2f3640;"
                      "}");
 
-
+//this->vid.open(0);
+//this->refresh_timer =new QTimer(this);
+//connect(this->refresh_timer,SIGNAL(timeout()),this,SLOT(on_refresh_timer()));
+//this->refresh_timer->start(30);
 
 
 }
