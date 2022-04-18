@@ -54,13 +54,13 @@ MainWindow::MainWindow(QWidget *parent)
                      "border-color: #2f3640;"
                      "}");
     QImage *img3=new QImage;
-    img3->load("/home/pi/images/logo.GIF");
+    img3->load("/home/pi/finalcode/files/logo.GIF");
     QPixmap pix3=QPixmap::fromImage(*img3);
     QPixmap fitpixmap3=pix3.scaled(290,270,Qt::IgnoreAspectRatio,Qt::SmoothTransformation);
     ui->label->setPixmap(fitpixmap3);
 
     QImage *img1=new QImage;
-    img1->load("/home/pi/images/logo.GIF");
+    img1->load("/home/pi/finalcode/files/logo.GIF");
     QPixmap pix1=QPixmap::fromImage(*img1);
     QPixmap fitpixmap1=pix1.scaled(290,270,Qt::IgnoreAspectRatio,Qt::SmoothTransformation);
     ui->label_3->setPixmap(fitpixmap1);
@@ -109,7 +109,7 @@ void MainWindow::on_pushButton_2_clicked()
 {
     this->refresh_timer->stop();
     QImage *img6=new QImage;
-    img6->load("/home/pi/images/logo.GIF");
+    img6->load("/home/pi/finalcode/files/logo.GIF");
     QPixmap pix6=QPixmap::fromImage(*img6);
     QPixmap fitpixmap6=pix6.scaled(290,270,Qt::IgnoreAspectRatio,Qt::SmoothTransformation);
     ui->label_video->setPixmap(fitpixmap6);
@@ -122,7 +122,7 @@ void MainWindow::paintEvent(QPaintEvent *)
 {
     QPainter p;
     p.begin(this);
-    p.drawPixmap(0,0, width(),height(),QPixmap("/home/pi/images/background.jpg"));
+    p.drawPixmap(0,0, width(),height(),QPixmap("/home/pi/finalcode/files/background.jpg"));
     p.end();
 }
 
