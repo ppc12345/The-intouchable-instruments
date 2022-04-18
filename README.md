@@ -9,5 +9,12 @@
 ###  6. Cmake project develop
 ###  7. Future work
 
-### (1) About project
+
+
+
+
+#### (1) About project
 ##### The-intouchable-instruments is a project that recognizes and captures gestures within a form and translates them into scales, and can play musical instruments such as the piano to complete real-time interaction with the user based on the user's actions.
+
+#### (2) Functions
+##### 
