@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1308</width>
+    <width>1200</width>
     <height>867</height>
    </rect>
   </property>
@@ -87,7 +87,7 @@
      <rect>
       <x>-1</x>
       <y>113</y>
-      <width>1301</width>
+      <width>1201</width>
       <height>621</height>
      </rect>
     </property>
@@ -131,15 +131,15 @@
     <widget class="QLabel" name="label_video">
      <property name="geometry">
       <rect>
-       <x>299</x>
-       <y>-10</y>
-       <width>701</width>
+       <x>300</x>
+       <y>0</y>
+       <width>600</width>
        <height>621</height>
       </rect>
      </property>
      <property name="maximumSize">
       <size>
-       <width>800</width>
+       <width>600</width>
        <height>800</height>
       </size>
      </property>
@@ -156,8 +156,8 @@
     <widget class="QLabel" name="label_3">
      <property name="geometry">
       <rect>
-       <x>1010</x>
-       <y>190</y>
+       <x>910</x>
+       <y>180</y>
        <width>291</width>
        <height>271</height>
       </rect>
@@ -300,7 +300,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1308</width>
+     <width>1200</width>
      <height>26</height>
     </rect>
    </property>
