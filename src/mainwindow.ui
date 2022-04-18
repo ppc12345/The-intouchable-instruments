@@ -19,7 +19,7 @@
      <rect>
       <x>-1</x>
       <y>32</y>
-      <width>1201</width>
+      <width>1301</width>
       <height>67</height>
      </rect>
     </property>
@@ -31,32 +31,6 @@
     </property>
     <layout class="QGridLayout" name="gridLayout_2">
      <item row="0" column="0">
-      <spacer name="horizontalSpacer_3">
-       <property name="orientation">
-        <enum>Qt::Horizontal</enum>
-       </property>
-       <property name="sizeHint" stdset="0">
-        <size>
-         <width>300</width>
-         <height>20</height>
-        </size>
-       </property>
-      </spacer>
-     </item>
-     <item row="0" column="2">
-      <spacer name="horizontalSpacer_2">
-       <property name="orientation">
-        <enum>Qt::Horizontal</enum>
-       </property>
-       <property name="sizeHint" stdset="0">
-        <size>
-         <width>40</width>
-         <height>20</height>
-        </size>
-       </property>
-      </spacer>
-     </item>
-     <item row="0" column="1">
       <widget class="QLabel" name="label_2">
        <property name="maximumSize">
         <size>
@@ -178,7 +152,7 @@
      <rect>
       <x>0</x>
       <y>745</y>
-      <width>1201</width>
+      <width>1301</width>
       <height>60</height>
      </rect>
     </property>
@@ -248,32 +222,13 @@
       <string>Stop</string>
      </property>
     </widget>
-    <widget class="Line" name="line">
-     <property name="geometry">
-      <rect>
-       <x>9</x>
-       <y>20</y>
-       <width>16</width>
-       <height>20</height>
-      </rect>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>16777215</width>
-       <height>20</height>
-      </size>
-     </property>
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-    </widget>
    </widget>
    <widget class="Line" name="line_2">
     <property name="geometry">
      <rect>
       <x>0</x>
       <y>100</y>
-      <width>1201</width>
+      <width>1301</width>
       <height>20</height>
      </rect>
     </property>
@@ -286,7 +241,7 @@
      <rect>
       <x>0</x>
       <y>730</y>
-      <width>1201</width>
+      <width>1301</width>
       <height>20</height>
      </rect>
     </property>
