@@ -5,7 +5,7 @@
 #include <QFileDialog>
 #include <qlabel.h>
 #include <QSpacerItem>
-
+//#include <utils.h>
 
 
 
@@ -50,6 +50,9 @@ MainWindow::MainWindow(QWidget *parent)
                      "border-color: #2f3640;"
                      "}");
 
+
+
+
 }
 
 MainWindow::~MainWindow()
@@ -77,4 +80,12 @@ void MainWindow::paintEvent(QPaintEvent *)
 //{
 //    QString img_name=QFileDialog::getOpenFileName(this, tr("open image"), ".", tr("Image Files(*.jpg *.png *.jpeg)"));
 //    Mat src=
+//}
+
+//void MainWindow::on_refresh_timer()
+//{
+//    cv::Mat frame;
+//    this->vid>>frame;
+//    QImage image=utils::cvmat_to_qimage(frame);
+//    this->ui->label_video->setPixmap(QPixmap::fromImage(image));
 //}
