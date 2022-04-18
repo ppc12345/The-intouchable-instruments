@@ -1,0 +1,4 @@
+/home/pi/finalcode/build/CMakeFiles/rebuild_cache.dir
+/home/pi/finalcode/build/CMakeFiles/demo.dir
+/home/pi/finalcode/build/CMakeFiles/edit_cache.dir
+/home/pi/finalcode/build/CMakeFiles/demo_autogen.dir

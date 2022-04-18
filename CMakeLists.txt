@@ -15,15 +15,13 @@ include_directories(${OpenCV_DIR}/include)
 link_directories(${OpenCV_DIR}/lib)
 
 set(SRC
-    MyThread.cpp
-    detect.cpp
-    main.cpp
-    utils.cpp
-    piano.cpp
-    mainwindow.cpp
-    mainwindow.h
-    mainwindow.ui
-    global.cpp
+    src/MyThread.cpp
+    src/detect.cpp
+    src/main.cpp
+    src/utils.cpp
+    src/piano.cpp
+    src/mainwindow.cpp
+    src/global.cpp
     
 )
 find_package(Qt5 COMPONENTS Widgets REQUIRED)

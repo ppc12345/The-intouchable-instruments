@@ -107,9 +107,12 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pushButton_2_clicked()
 {
-    QMessageBox::information(NULL, "Title Detect", "Make sure stop？"
-                                , QMessageBox::Yes | QMessageBox::No
-                                , QMessageBox::Yes);
+    this->refresh_timer->stop();
+    QImage *img6=new QImage;
+    img6->load("/home/pi/images/logo.GIF");
+    QPixmap pix6=QPixmap::fromImage(*img6);
+    QPixmap fitpixmap6=pix6.scaled(290,270,Qt::IgnoreAspectRatio,Qt::SmoothTransformation);
+    ui->label_video->setPixmap(fitpixmap6);
 }
 
 
@@ -127,7 +130,9 @@ void MainWindow::paintEvent(QPaintEvent *)
 
 void MainWindow::on_pushButton_clicked()
 {
-
+    this->refresh_timer = new QTimer(this);
+    connect(this->refresh_timer,SIGNAL(timeout()),this,SLOT(ontryrefreshtimer()));
+    this->refresh_timer->start(50);
 }
 
 void MainWindow::ontryrefreshtimer()
