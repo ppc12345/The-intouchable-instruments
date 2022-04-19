@@ -2,9 +2,20 @@
 <div align="center">
     <img align="center" src="files/logo.GIF">
     <p align="center" >A QT GUI application of Intouchable instruments</p>
-    <a href="https://youtu.be/L8Uz_gjlirM https://twitter.com/ppc1112345/status/1516460707834966017?s=20&t=ULfdEZPvhGr8-wSA55PxEQ">youtube</a>
+    <hr/>
+
+</div>
+
+<br>
+<br>
+
+## <p align="center">Publishing platforms</p>
+<div align="center">
+    <a href="https://youtu.be/L8Uz_gjlirM https://twitter.com/ppc1112345/status/1516460707834966017?s=20&t=ULfdEZPvhGr8-wSA55PxEQ">Youtube</a>
     &emsp;&emsp;
     <a href="https://www.facebook.com/100006301512966/videos/554006359379729/">Facebook</a>
+    &emsp;&emsp;
+    <a href="https://mobile.twitter.com/ppc1112345/status/1516460707834966017?s=20&t=ULfdEZPvhGr8-wSA55PxEQ">Twitter</a>
 </div>
 
 ## <p align="left">Contents</p>
