@@ -72,6 +72,7 @@
 #####     &emsp;&emsp;e) &emsp;Project running and debugging
 #####         &emsp;&emsp;&emsp;&emsp;i. &emsp;Compiling and running the released version of the project using the command line will be supported.
 ```
+    mkdir build
     cd build
     cmake ...
     make
