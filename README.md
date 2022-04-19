@@ -1,5 +1,9 @@
 # <p align="center">The-intouchable-instruments</p>
-![image](images/logo.GIF)
+<div align="center">
+    <img align="center" src="files/logo.GIF">
+    <p align="center" >A QT GUI application of Intouchable instruments</p>
+</div>
+
 ## <p align="left">Contents</p>
 ####  &emsp;&emsp;1. About project
 ####  &emsp;&emsp;2. Functions
@@ -15,18 +19,18 @@
 <br>
 
 
-#### (1) &emsp;About project
+## <p align="left">(1) &emsp;About project</p>
 ##### &emsp;&emsp;The-intouchable-instruments is a project that recognizes and captures gestures within a form and translates them into scales, and can play musical instruments such as the piano to complete real-time interaction with the user based on the user's actions.
 
 <br>
 
-#### (2) &emsp;Functions
+## <p align="left">(2) &emsp;Functions</p>
 #####     &emsp;&emsp;a) &emsp;After the project is running, the seven areas to be recognized in the display screen will be divided into seven scales of music, and the gestures will be able to recognize and respond to the corresponding notes after crossing the corresponding areas.
 #####     &emsp;&emsp;b) &emsp;Users independently choose to open the recognition task or pause the recognition task, and later can choose different musical instruments as the result output.
 
 <br>
 
-#### (3) &emsp;Equipment preparation
+## <p align="left">(3) &emsp;Equipment preparation</p>
 #####     &emsp;&emsp;a) &emsp;Model: Raspberry Pi 3B+
 #####     &emsp;&emsp;b) &emsp;Usb interface camera
 #####     &emsp;&emsp;c) &emsp;Usb audio playback adapter
@@ -34,7 +38,7 @@
 
 <br>
 
-#### (4) &emsp;Project process
+## <p align="left">(4) &emsp;Project process</p>
 #####     &emsp;&emsp;a) &emsp;Debugging and configuration of Raspberry Pi
 #####         &emsp;&emsp;Download of the system: https://www.raspberrypi.org/downloads/raspbian/ 
 #####     &emsp;&emsp;b) &emsp;System initialization
@@ -78,7 +82,7 @@
 
 <br>
 
-#### (5) &emsp;QT Development
+## <p align="left">(5) &emsp;QT Development</p>
 #####     &emsp;&emsp;a) &emsp;QT development version: QT 5.9.9
 #####     &emsp;&emsp;b) &emsp;Create qt project based on cmake project
 #####     &emsp;&emsp;c) &emsp;Configure compilation environment
@@ -91,17 +95,17 @@
 
 <br>
 
-#### (6) &emsp;Project integration
+## <p align="left">(6) &emsp;Project integration</p>
 #####     &emsp;&emsp;Modify the cmakelists.txt file and main.cpp file to integrate the QT project with the Cmake project to finish synchronizing the video stream and displaying it.
 
 <br>
 
-#### (7) &emsp;Cmake project development
+## <p align="left">(7) &emsp;Cmake project development</p>
 #####     &emsp;&emsp;（数据处理思想）
 
 <br>
 
-#### (8）&emsp;Future Outlook
+## <p align="left">(8) &emsp;Future Outlook</p>
 #####     &emsp;&emsp;The project is a human-centered real-time gesture recognition project, in the future, the project team will focus on user feedback and improve the interaction effect of the project according to the positive feedback to enhance user friendliness, based on this, the project will do version upgrades in the following aspects.
 #####     &emsp;&emsp;a) &emsp;In the initial version of the project, the default instrument is piano. In the future, with the improvement of the project and the steady progress of the development, users will be able to choose different instruments to demonstrate the results, and according to the recognized scales, they can complete the creation and performance of the tracks.
 #####     &emsp;&emsp;b) &emsp;Improvement of recognition. In the latest version released, the recognition accuracy has been able to meet the basic needs, although in complex environments, the recognition accuracy varies slightly, but still within the confidence interval. In the future, the project team will upgrade the recognition accuracy and response timeliness.
