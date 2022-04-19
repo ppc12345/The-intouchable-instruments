@@ -111,17 +111,17 @@
 #####     &emsp;&emsp;g) &emsp;Use a library of functions that point to control objects to complete the parameter pointing.
 #####     &emsp;&emsp;h) &emsp;Create utils.cpp, utils.h to convert video stream in Mat format to Qimage format and use setPixmap method to get the frame image of the video.
 ```
-        namespace futils{
-            QImage cvmat_to_qimage(const cv::Mat& mat);
-        }
+    namespace futils{
+        QImage cvmat_to_qimage(const cv::Mat& mat);
+    }
 ```
 ```
-        namespace futils{
-            QImage cvmat_to_qimage(const cv::Mat& mat){
-                QImage image(mat.data, mat.cols, mat.rows, mat.step, QImage::Format_RGB888);
-                return image;
-            }
+    namespace futils{
+        QImage cvmat_to_qimage(const cv::Mat& mat){
+            QImage image(mat.data, mat.cols, mat.rows, mat.step, QImage::Format_RGB888);
+            return image;
         }
+    }
 ```
 #####     &emsp;&emsp;j) &emsp;Write timer function to synchronize the output video to refresh and display in lbel control body and replace opencv adaptive form structure.
 
@@ -135,23 +135,23 @@
 ## <p align="left">(7) &emsp;Cmake project development</p>
 #####     &emsp;&emsp;All the links of package and code file are made by CMake. 
 ```
-        project (demo)
-        set(SRC
-            src/MyThread.cpp
-            src/detect.cpp
-            src/main.cpp
-            ...    
-            )
+    project (demo)
+    set(SRC
+        src/MyThread.cpp
+        src/detect.cpp
+        src/main.cpp
+        ...    
+        )
 
-        find_package (OpenCV REQUIRED)
-        find_package (Threads)
-        ...
+    find_package (OpenCV REQUIRED)
+    find_package (Threads)
+    ...
         
-        add_executable(demo ${SRC})
-        add_test(NAME ThreadTest COMMAND THREAD_TEST)
+    add_executable(demo ${SRC})
+    add_test(NAME ThreadTest COMMAND THREAD_TEST)
         
-        target_link_libraries(demo ${OpenCV_LIBS})
-        ...
+    target_link_libraries(demo ${OpenCV_LIBS})
+    ...
 ```
 
 <br>
