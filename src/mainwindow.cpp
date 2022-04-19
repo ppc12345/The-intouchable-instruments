@@ -26,7 +26,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     //QLabel *label_2=new QLabel(label_2);
     ui->label_2->setStyleSheet("QLabel {width:500;}");
-    ui->horizontalSpacer_3->changeSize(320,20);
+    //ui->horizontalSpacer_3->changeSize(320,20);
     
 
     setStyleSheet(
