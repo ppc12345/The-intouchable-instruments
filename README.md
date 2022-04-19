@@ -86,6 +86,9 @@
 #####     &emsp;&emsp;a) &emsp;QT development version: QT 5.9.9
 #####     &emsp;&emsp;b) &emsp;Create qt project based on cmake project
 #####     &emsp;&emsp;c) &emsp;Configure compilation environment
+```
+        find_package(Qt5 COMPONENTS Widgets REQUIRED)
+```
 #####     &emsp;&emsp;d) &emsp;Interface development.
 #####     &emsp;&emsp;e) &emsp;Use controls to build the architecture of the front-end display interface, and use springs and grid layout to complete the orderly layout of controls.
 #####     &emsp;&emsp;f) &emsp;Write style sheets and optimize UI items in mainwindow.cpp.
