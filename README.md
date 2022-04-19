@@ -102,8 +102,8 @@
 #####     &emsp;&emsp;b) &emsp;Create qt project based on cmake project
 #####     &emsp;&emsp;c) &emsp;Configure compilation environment
 ```
-        find_package(Qt5 COMPONENTS Widgets REQUIRED)
-        target_link_libraries(demo Qt5::Widgets ${OpenCV_LIBRARIES})
+    find_package(Qt5 COMPONENTS Widgets REQUIRED)
+    target_link_libraries(demo Qt5::Widgets ${OpenCV_LIBRARIES})
 ```
 #####     &emsp;&emsp;d) &emsp;Interface development.
 #####     &emsp;&emsp;e) &emsp;Use controls to build the architecture of the front-end display interface, and use springs and grid layout to complete the orderly layout of controls.
