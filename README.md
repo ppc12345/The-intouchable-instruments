@@ -134,23 +134,48 @@
 
 ## <p align="left">(7) &emsp;Cmake project development</p>
 #####     &emsp;&emsp;All the links of package and code file are made by CMake. 
+CmakeLists.txt in main folder
 ```
-    project (demo)
-    set(SRC
+    cmake_minimum_required(VERSION 3.1.0)  //version of cmake
+    project (demo)                         //name of project
+    add_subdirectory(test)                 //add sub folder
+    enable_testing()
+    ...
+    
+    set(SRC                                //SRC is a define of executable files(source code)
         src/MyThread.cpp
         src/detect.cpp
         src/main.cpp
         ...    
         )
 
-    find_package (OpenCV REQUIRED)
+    find_package (OpenCV REQUIRED)         //required package
     find_package (Threads)
     ...
         
-    add_executable(demo ${SRC})
-    add_test(NAME ThreadTest COMMAND THREAD_TEST)
+    add_executable(demo ${SRC})            //add path of source code
+    add_test(NAME ThreadTest COMMAND THREAD_TEST)   //add test
         
-    target_link_libraries(demo ${OpenCV_LIBS})
+    target_link_libraries(demo ${OpenCV_LIBS})    //link libraries
+    ...
+```
+
+CmakeLists.txt in test folder
+```
+    find_package (Boost COMPONENTS unit_test_framework REQUIRED)
+    include_directories (${demo_SOURCE_DIR}/src
+                        ${Boost_INCLUDE_DIRS}
+                        )
+    add_definitions (-DBOOST_TEST_DYN_LINK)
+
+    add_executable(THREAD_TEST ThTest.cpp)   //add test code
+    target_link_libraries (THREAD_TEST       //link libraries
+                            thread
+                            ${CMAKE_THREAD_LIB_INIT}
+                            ${Boost_FILESYSTEM_LIBRARY}
+                            ${Boost_SYSTEM_LIBRARY}
+                            ${Boost_UNIT_TEST_FRAMEWORK_LIBRARY}
+                            )
     ...
 ```
 
