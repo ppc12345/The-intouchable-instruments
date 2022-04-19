@@ -28,7 +28,7 @@ void Detect::setup() {
                         w[n]+=1;
                 }
             }
-            if  (w[n] > 2000){   //threshhold
+            if  (w[n] > 1500){   //threshhold
                 out[n]=1;
                 //rectangle(img, Rect(10+n*90, 100, 80, 100), Scalar(0, 0, 255), 2, 8); 
             }
