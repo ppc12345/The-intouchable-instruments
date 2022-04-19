@@ -133,7 +133,26 @@
 <br>
 
 ## <p align="left">(7) &emsp;Cmake project development</p>
-#####     &emsp;&emsp;（数据处理思想）
+#####     &emsp;&emsp;All the links of package and code file are made by CMake. 
+```
+        project (demo)
+        set(SRC
+            src/MyThread.cpp
+            src/detect.cpp
+            src/main.cpp
+            ...    
+            )
+
+        find_package (OpenCV REQUIRED)
+        find_package (Threads)
+        ...
+        
+        add_executable(demo ${SRC})
+        add_test(NAME ThreadTest COMMAND THREAD_TEST)
+        
+        target_link_libraries(demo ${OpenCV_LIBS})
+        ...
+```
 
 <br>
 
