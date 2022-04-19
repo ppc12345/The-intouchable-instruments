@@ -136,7 +136,7 @@
 <br>
 
 ## <p align="left">(6) &emsp;Project integration</p>
-#####     &emsp;&emsp;Modify the cmakelists.txt file and main.cpp file to integrate the QT project with the Cmake project to finish synchronizing the video stream and displaying it.
+#####     &emsp;&emsp;Modify the cmakelists.txt file and main.cpp file to integrate the QT project with the Cmake project to finish synchronizing the video stream and displaying it. Some parts available for modification：Different length of display music at folder 'audio'. User can change code at piano.cpp to choose suitable wav files. Name of wav file is xX.wav, x means length(2 is 0.2s, 3 is 0.3s) and X means scale(A means do, B means re).
 
 <br>
 
