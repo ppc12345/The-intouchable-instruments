@@ -45,7 +45,5 @@ void Detect::setup() {
 
         memset(out, 0, 7 * sizeof(out[0]));
         memset(w, 0, 7 * sizeof(w[0]));
-
-
     }
 }
