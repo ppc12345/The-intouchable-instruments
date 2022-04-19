@@ -96,6 +96,14 @@
             QImage cvmat_to_qimage(const cv::Mat& mat);
         }
 ```
+```
+        namespace futils{
+            QImage cvmat_to_qimage(const cv::Mat& mat){
+                QImage image(mat.data, mat.cols, mat.rows, mat.step, QImage::Format_RGB888);
+                return image;
+            }
+        }
+```
 #####     &emsp;&emsp;j) &emsp;Write timer function to synchronize the output video to refresh and display in lbel control body and replace opencv adaptive form structure.
 
 <br>
