@@ -91,6 +91,11 @@
 #####     &emsp;&emsp;f) &emsp;Write style sheets and optimize UI items in mainwindow.cpp.
 #####     &emsp;&emsp;g) &emsp;Use a library of functions that point to control objects to complete the parameter pointing.
 #####     &emsp;&emsp;h) &emsp;Create utils.cpp, utils.h to convert video stream in Mat format to Qimage format and use setPixmap method to get the frame image of the video.
+```
+        namespace futils{
+            QImage cvmat_to_qimage(const cv::Mat& mat);
+        }
+```
 #####     &emsp;&emsp;j) &emsp;Write timer function to synchronize the output video to refresh and display in lbel control body and replace opencv adaptive form structure.
 
 <br>
