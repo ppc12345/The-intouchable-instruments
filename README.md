@@ -1,6 +1,6 @@
-# The-intouchable-instruments
-
-### Contents
+# <p align="center">The-intouchable-instruments</p>
+![image](images/logo.GIF)
+## <p align="left">Contents</p>
 ####  &emsp;&emsp;1. About project
 ####  &emsp;&emsp;2. Functions
 ####  &emsp;&emsp;3. Equipment preparation
