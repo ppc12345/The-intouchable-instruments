@@ -9,7 +9,7 @@ void Detect::setup() {
     for(;;)
     {
         mtx.lock();
-        img = fbuffer; 
+        img = fbuffer;  //get data from buffer
         mtx.unlock();
         if(img.empty())
             continue;
@@ -23,7 +23,7 @@ void Detect::setup() {
             {
                 for (int j = 10 + n * 90; j <= 90 + n * 90; j++)
                 {
-                    P = hsv_mask.at<uchar>(i, j);
+                    P = hsv_mask.at<uchar>(i, j);  //get pixel data from detect area
                         if (P > 221)
                         w[n]+=1;
                 }
@@ -36,7 +36,7 @@ void Detect::setup() {
         now = clock();
         if ((double)(now - last) / CLOCKS_PER_SEC > 0.2)
         {
-            piano.pout(out);
+            piano.pout(out);  //send keyboard message per 0.2 seconds for reducing errors in music playing
             last = now;
         }
         //cvtColor(rgb, img, COLOR_RGB2BGR);

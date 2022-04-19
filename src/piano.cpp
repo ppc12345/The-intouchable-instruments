@@ -4,7 +4,7 @@ Piano::Piano(){}
 
 void Piano::pout(int* a) {
     for (int i = 0; i < 7; i++) {
-        cout << *(a + i) << " ";
+        cout << *(a + i) << " ";  //output keyboard message
     }
     cout << endl;
     if(*a==1){
@@ -23,5 +23,4 @@ void Piano::pout(int* a) {
         system("play /home/pi/finalcode/audio/6G.wav");
     }
     
-    //code
 }

@@ -11,8 +11,8 @@
 using namespace cv;
 using namespace std;
 
-extern Mat fbuffer;
-extern int flag;
+extern Mat fbuffer;  //buffer to store data
 extern mutex mtx;
+//extern int flag;
 
 #endif // !GLOBAL_H

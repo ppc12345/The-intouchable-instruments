@@ -91,7 +91,7 @@ MainWindow::MainWindow(QWidget *parent)
 this->vid.open(0);
 this->refresh_timer = new QTimer(this);
 connect(this->refresh_timer,SIGNAL(timeout()),this,SLOT(ontryrefreshtimer()));
-this->refresh_timer->start(20);
+this->refresh_timer->start(20);   //set timer
 
 //refresh_timer = new QTimer(this);
 //connect(refresh_timer,SIGNAL(timeout()),this,MainWindow::video_update());
@@ -142,7 +142,7 @@ void MainWindow::ontryrefreshtimer()
     //cv::imshow("frame",frame);
     //cv::waitKey(1);
     mtx.lock();
-    fbuffer = frame; 
+    fbuffer = frame; //send data to buffer
     mtx.unlock();
     rectangle(frame, Rect(10, 100, 80, 100), Scalar(0, 255, 0), 2, 8);
     rectangle(frame, Rect(100, 100, 80, 100), Scalar(0, 255, 0), 2, 8);
@@ -152,7 +152,7 @@ void MainWindow::ontryrefreshtimer()
     rectangle(frame, Rect(460, 100, 80, 100), Scalar(0, 255, 0), 2, 8);
     rectangle(frame, Rect(550, 100, 80, 100), Scalar(0, 255, 0), 2, 8); 
     QImage image = futils::cvmat_to_qimage(frame);
-    ui->label_video->setPixmap(QPixmap::fromImage(image));
+    ui->label_video->setPixmap(QPixmap::fromImage(image));  //show on qt UI
 }
 
 /*
